@@ -3,6 +3,7 @@ window.Router = Backbone.Router.extend({
     routes: {
         "": "home",
         "works": "works",
+        "skills" : "skills",
         "about": "about"
     },
 
@@ -39,6 +40,16 @@ window.Router = Backbone.Router.extend({
 
         $('#content').html(this.worksView.el);
         this.headerView.select('works-menu');
+    },
+
+    skills: function () {
+        if (!this.skillsView) {
+            this.skillsView = new SkillsView();
+            this.skillsView.render();
+        }
+
+        $('#content').html(this.skillsView.el);
+        this.headerView.select('skills-menu');
     },
 
     about: function () {
@@ -102,7 +113,7 @@ window.Router = Backbone.Router.extend({
 
 });
 
-templateLoader.load(["HomeView", "HeaderView", "FooterView", "WorksView", "AboutView"],
+templateLoader.load(["HomeView", "HeaderView", "FooterView", "WorksView", "AboutView", "SkillsView"],
     function () {
         app = new Router();
         Backbone.history.start();
