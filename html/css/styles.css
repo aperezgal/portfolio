@@ -37,15 +37,26 @@ Body {
     font-size: 1.16em;
 }
 
+
+
 #header-right-container ul li a{
     color: #666;
     cursor: pointer;
     text-decoration: none;
 }
 
+#header-right-container ul li a.active{
+    color: #007DC3;
+    text-decoration: none;
+    cursor: none;
+}
+#header-right-container ul li a:active{
+    text-decoration: none;
+}
 #header-right-container ul li a:hover{
     color: #007DC3;
 }
+
 
 #content{
     width:100%;
@@ -59,14 +70,12 @@ Body {
 
 div.home-container {
     width:100%;
-    height:100%;
     text-align:center;
 }
 h1.home-title {
     color: #007DC3;
     font-size: 70px;
     text-transform: uppercase;
-    margin-top:-700px;
     vertical-align:middle;
 }
 h2.home-title {
@@ -76,6 +85,7 @@ h2.home-title {
     text-transform: uppercase;
     vertical-align:middle;
 }
+
 
 #home-canvas {
     width:100%;
@@ -87,19 +97,37 @@ div.works-container {
     height:100%;
     margin:20px;
 }
+
+
 .works-thumbnail {
     width:98%;
-    min-height:100px;
-    background-color: #333;
+    text-align: center;
+    max-height: 85%;
+    min-height: 100px;
+    overflow: auto;
 }
 
 .project-item {
+    border: 2px solid #666666;
+    display: inline-block;
+    height: 225px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
     width: 300px;
-    height: 250px;
-    background-color: red;
-    padding-top:20px;
-    padding-left:20px;
-    float:left;
+}
+
+.project-item .project-text-container {
+    background-color: #007DC3;
+    margin-top: -54px;
+    opacity: 0.8;
+    height:42px;
+    width: 300px;
+}
+
+.project-item .project-description {
+    color: #fff;
+    padding-top: 17px;
 }
 h3.zone-title {
     color: #007DC3;
@@ -109,6 +137,61 @@ h3.zone-title {
 
 p {
     color: #666;
+}
+
+div.about-container {
+    width:100%;
+    height:90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+
+
+}
+
+div.about-container .title-container {
+    text-align: center;
+    width:100%;
+}
+
+div.about-container .objetive-container {
+    width:100%;
+}
+
+p.section-paragraph {
+    margin-right: 50px;
+}
+h2.section-title {
+    color: #007DC3;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+h2.name-text {
+    color: #007DC3;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0.3em 0;
+}
+
+h3.subname-text, h3.subname-text a {
+    color: #666;
+    font-size: 16px;
+    margin: 0.2em 0;
+}
+
+
+.items-container {
+    margin-left: 25px;
+}
+.items-container .title{
+    color: #666;
+    font-size: 14px;
+    margin: 0.4em 0;
+}
+
+.items-container .description{
+    font-size: 12px;
+    margin: 0.2em 0;
 }
 
 .footer {
