@@ -1,0 +1,140 @@
+
+html, body {
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:100%;
+}
+
+
+Body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+.container {
+    width:100%;
+    height:95%;
+}
+
+#header-right-container {
+    float: right;
+    padding-top:13px;
+    padding-right: 15px;
+}
+
+#header-right-container ul{
+    float: left;
+    margin-right: 15px;
+    margin-top: 19px;
+}
+
+#header-right-container ul li{
+    display: inline-block;
+    color: #666;
+    font-size: 1.16em;
+}
+
+#header-right-container ul li a{
+    color: #666;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#header-right-container ul li a:hover{
+    color: #007DC3;
+}
+
+#content{
+    width:100%;
+    height:100%;
+    padding-top: 55px;
+}
+#content > div {
+    height: 100%;
+    width: 100%;
+}
+
+div.home-container {
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+h1.home-title {
+    color: #007DC3;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-top:-700px;
+    vertical-align:middle;
+}
+h2.home-title {
+    color: #666;
+    font-size: 30px;
+    margin-top: -40px;
+    text-transform: uppercase;
+    vertical-align:middle;
+}
+
+#home-canvas {
+    width:100%;
+    height:100%;
+}
+
+div.works-container {
+    width:100%;
+    height:100%;
+    margin:20px;
+}
+.works-thumbnail {
+    width:98%;
+    min-height:100px;
+    background-color: #333;
+}
+
+.project-item {
+    width: 300px;
+    height: 250px;
+    background-color: red;
+    padding-top:20px;
+    padding-left:20px;
+    float:left;
+}
+h3.zone-title {
+    color: #007DC3;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+p {
+    color: #666;
+}
+
+.footer {
+    height: 5%;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    clear: both;
+    z-index: 0;
+}
+
+#footer p{
+    font-size: 1em;
+    color: #666;
+}
+
+#footer a{
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer a:hover{
+    color: #007DC3;
+}
+
